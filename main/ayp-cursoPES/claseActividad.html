@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./img/favicon.ico"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/master.css">
+
+  <!-- VERIFICAR SI EL USUARIO ESTÁ LOGUEADO -->
+  <script src="../js/checkLoggedIn.js"></script>
+
+  <title>CLASES</title>
+</head>
+
+<body class="container-fluid p-0">
+  <!-- Incluir HEADER CHICO, reparar -->
+  <!-- <iframe src="./headerChico.html"
+    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> -->
+
+  <!-- HEADER en versión compacta. Debería ser un archivo aparte e importarlo aquí -->
+  <header class="headerHeight bgClase d-flex align-items-center justify-content-between"
+  style="height: 56px;">
+    <div class="col-1 d-flex justify-content-center text-center mx-2">
+      <a href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+          class="bi bi-arrow-left-circle text-light" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+        </svg></a>
+    </div>
+    <div class="w-100 bgClase d-flex justify-content-end align-items-center">
+      <img style="width: 25px; margin-right: 10px;" class="m-0 p-0 headerHeightIndex img-fluid" src="./img/pezicono.png" alt="">
+      <h5 class="mx-2 text-white d-flex align-items-center oswald mt-2">Pescando Sonidos</h5>
+    </div>
+    <div class="col-1 d-flex">
+    </div>
+  </header>
+
+  <main class="mainHeight bgGrey">
+    <div class="d-flex flex-wrap justify-content-around">
+      <div class="col-12 col-md-10 py-3">
+        <div class="card">
+
+          <!-- BARRA DE NAVEGACIÓN ENTRE CLASES -->
+          <div class="card-header">
+            <ul class="nav nav-pills nav-fill card-header-pills">
+              <li class="nav-item">
+                <a class="h4 nav-link oswald" aria-current="false" href="#" id="clase1">Clase 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="h4 nav-link oswald" href="#" id="clase2">Clase 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="h4 nav-link oswald" href="#" id="clase3">Clase 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="h4 nav-link oswald" href="#" id="clase4">Clase 4</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 0 - PRESENTACION DEL CURSO -->
+          <div class="presentacion d-flex">
+            <div id="introduccionContenido" class="d-block card-body">
+
+              <!-- TITULO GENERAL -->
+              <!-- PRESENTACION -->
+              <div class="d-flex justify-content-center align-items-center mt-5">
+                <div class="col-0 col-lg-2 d-flex"></div>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://player.vimeo.com/video/571228291" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-0 col-lg-2 d-flex"></div>
+              </div>
+              <div class="row my-3"></div>
+            </div>
+          </div>
+
+          <!-- PANEL INFERIOR CON COLUMNA DE ACTIVIDADES Y VISUALIZACION DE ACTIVIDAD -->
+          <div class="actividades d-flex flex-column flex-md-row d-none">
+
+            <!-- COLUMNA DE NAVEGACION ENTRE ACTIVIDADES DE CADA CLASE -->
+            <div class="border-bottom border-md-0 p-2 p-md-3 pt-md-4 flex-grow-1 flex-md-grow-0 flex-md-column">
+
+              <!-- CLASE 1 - BOTONES DE ACTIVIDADES -->
+              <ul id="clase1List"
+                class="claseList nav flex-md-column justify-content-around nav-pills navActividadesWidth nav-fill pt-md-3">
+                <li class="nav-item" role="presentation">
+                  <button id="clase1-actividad1-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase1-actividad1" type="button" role="tab" aria-controls="clase1-actividad1"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">¿Qué es el sonido?</p>
+                    <p class="m-0 d-md-none">1</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase1-actividad2-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase1-actividad2" type="button" role="tab" aria-controls="clase1-actividad2"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Cualidades del sonido</p>
+                    <p class="m-0 d-md-none">2</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase1-actividad3-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase1-actividad3" type="button" role="tab" aria-controls="clase1-actividad3"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Timbre y fuente sonora</p>
+                    <p class="m-0 d-md-none">3</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase1-actividad4-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase1-actividad4" type="button" role="tab" aria-controls="clase1-actividad4"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">La piñata</p>
+                    <p class="m-0 d-md-none">4</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase1-actividad5-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase1-actividad5" type="button" role="tab" aria-controls="clase1-actividad5"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Jeremías</p>
+                    <p class="m-0 d-md-none">5</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase1-actividad6-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase1-actividad6" type="button" role="tab" aria-controls="clase1-actividad6"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">La familia</p>
+                    <p class="m-0 d-md-none">6</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase1-tarea-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase1-tarea" type="button" role="tab" aria-controls="clase1-tarea"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Tarea</p>
+                    <p class="m-0 d-md-none">Tarea</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase1-saberMas-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase1-saberMas" type="button" role="tab" aria-controls="clase1-saberMas"
+                    aria-selected="false">
+                      <p class="m-0 d-none d-md-block text-start" style="font-weight: bold;">Saber más
+                        <img src="./img/punto_rojo+.png" style="width: 20px;margin-left: 15px;" alt="">
+                      </p>
+                      <p class="m-0 d-md-none" style="font-weight: bold;">Saber más
+                        <img src="./img/punto_rojo+.png" style="width: 10px;margin-left: 15px;" alt="">
+                      </p>
+                    </button>
+                </li>
+              </ul>
+
+              <!-- CLASE 2 - BOTONES DE ACTIVIDADES -->
+              <ul id="clase2List"
+                class="claseList nav flex-md-column justify-content-around nav-pills navActividadesWidth nav-fill pt-md-3">
+                <li class="nav-item" role="presentation">
+                  <button id="clase2-actividad1-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase2-actividad1" type="button" role="tab" aria-controls="clase2-actividad1"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Altura tonal</p>
+                    <p class="m-0 d-md-none">1</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase2-actividad2-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase2-actividad2" type="button" role="tab" aria-controls="clase2-actividad2"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Cómo será?</p>
+                    <p class="m-0 d-md-none">2</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase2-actividad3-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase2-actividad3" type="button" role="tab" aria-controls="clase2-actividad3"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Toboganes</p>
+                    <p class="m-0 d-md-none">3</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase2-actividad4-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase2-actividad4" type="button" role="tab" aria-controls="clase2-actividad4"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Intensidad</p>
+                    <p class="m-0 d-md-none">4</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase2-actividad5-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase2-actividad5" type="button" role="tab" aria-controls="clase2-actividad5"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Rogelio Dintel</p>
+                    <p class="m-0 d-md-none">5</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase2-actividad6-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase2-actividad6" type="button" role="tab" aria-controls="clase2-actividad6"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Duración</p>
+                    <p class="m-0 d-md-none">6</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase2-tarea-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase2-tarea" type="button" role="tab" aria-controls="clase2-tarea"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Tarea</p>
+                    <p class="m-0 d-md-none">Tarea</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase2-saberMas-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase2-saberMas" type="button" role="tab" aria-controls="clase2-saberMas"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start" style="font-weight: bold;">Saber más
+                      <img src="./img/punto_rojo+.png" style="width: 20px;margin-left: 15px;" alt="">
+                    </p>
+                    <p class="m-0 d-md-none" style="font-weight: bold;">Saber más
+                      <img src="./img/punto_rojo+.png" style="width: 10px;margin-left: 15px;" alt="">
+                    </p>
+                  </button>
+                </li>
+              </ul>
+
+              <!-- CLASE 3 - BOTONES DE ACTIVIDADES -->
+              <ul id="clase3List"
+                class="claseList nav flex-md-column justify-content-around nav-pills navActividadesWidth nav-fill pt-md-3">
+                <li class="nav-item" role="presentation">
+                  <button id="clase3-actividad1-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase3-actividad1" type="button" role="tab" aria-controls="clase3-actividad1"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Sonido y emoción</p>
+                    <p class="m-0 d-md-none">1</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase3-actividad2-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase3-actividad2" type="button" role="tab" aria-controls="clase3-actividad2"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Canción de la zanahoria</p>
+                    <p class="m-0 d-md-none">2</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase3-actividad3-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase3-actividad3" type="button" role="tab" aria-controls="clase3-actividad3"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Percepción y atención sonora</p>
+                    <p class="m-0 d-md-none">3</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase3-actividad4-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase3-actividad4" type="button" role="tab" aria-controls="clase3-actividad4"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Evocación y representación sonora</p>
+                    <p class="m-0 d-md-none">4</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase3-actividad5-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase3-actividad5" type="button" role="tab" aria-controls="clase3-actividad5"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Serapio Alcornoque</p>
+                    <p class="m-0 d-md-none">5</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase3-actividad6-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase3-actividad6" type="button" role="tab" aria-controls="clase3-actividad6"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">¿Quién será?</p>
+                    <p class="m-0 d-md-none">6</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase3-tarea-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase3-tarea" type="button" role="tab" aria-controls="clase3-tarea"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Tarea</p>
+                    <p class="m-0 d-md-none">Tarea</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase3-saberMas-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase3-saberMas" type="button" role="tab" aria-controls="clase3-saberMas"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start" style="font-weight: bold;">Saber más
+                      <img src="./img/punto_rojo+.png" style="width: 20px;margin-left: 15px;" alt="">
+                    </p>
+                    <p class="m-0 d-md-none" style="font-weight: bold;">Saber más
+                      <img src="./img/punto_rojo+.png" style="width: 10px;margin-left: 15px;" alt="">
+                    </p>
+                  </button>
+                </li>
+              </ul>
+
+              <!-- CLASE 4 - BOTONES DE ACTIVIDADES -->
+              <ul id="clase4List"
+                class="claseList nav flex-md-column justify-content-around nav-pills navActividadesWidth nav-fill pt-md-3">
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-actividad1-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-actividad1" type="button" role="tab" aria-controls="clase4-actividad1"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Percepción rítmica</p>
+                    <p class="m-0 d-md-none">1</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-actividad2-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-actividad2" type="button" role="tab" aria-controls="clase4-actividad2"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Los enanos veracruzanos</p>
+                    <p class="m-0 d-md-none">2</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-actividad3-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-actividad3" type="button" role="tab" aria-controls="clase4-actividad3"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Percepción melódica</p>
+                    <p class="m-0 d-md-none">3</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-actividad4-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-actividad4" type="button" role="tab" aria-controls="clase4-actividad4"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Encantador de serpientes</p>
+                    <p class="m-0 d-md-none">4</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-actividad5-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-actividad5" type="button" role="tab" aria-controls="clase4-actividad5"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Paisaje sonoro</p>
+                    <p class="m-0 d-md-none">5</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-actividad6-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-actividad6" type="button" role="tab" aria-controls="clase4-actividad6"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">¿Por dónde fue el coche?</p>
+                    <p class="m-0 d-md-none">6</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-actividad7-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-actividad7" type="button" role="tab" aria-controls="clase4-actividad7"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Percepción global</p>
+                    <p class="m-0 d-md-none">7</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-actividad8-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-actividad8" type="button" role="tab" aria-controls="clase4-actividad8"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">El ingeniero distraído</p>
+                    <p class="m-0 d-md-none">8</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-tarea-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-tarea" type="button" role="tab" aria-controls="clase4-tarea"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Tarea</p>
+                    <p class="m-0 d-md-none">Tarea</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-tareaFinal-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-tareaFinal" type="button" role="tab" aria-controls="clase4-tareaFinal"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start">Tarea final</p>
+                    <p class="m-0 d-md-none">T. final</p>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="clase4-saberMas-tab" class="nav-link mb-md-1" data-bs-toggle="tab"
+                    data-bs-target="#clase4-saberMas" type="button" role="tab" aria-controls="clase4-saberMas"
+                    aria-selected="false">
+                    <p class="m-0 d-none d-md-block text-start" style="font-weight: bold;">Saber más
+                      <img src="./img/punto_rojo+.png" style="width: 20px;margin-left: 15px;" alt="">
+                    </p>
+                    <p class="m-0 d-md-none" style="font-weight: bold;">Saber más
+                      <img src="./img/punto_rojo+.png" style="width: 10px;margin-left: 15px;" alt="">
+                    </p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Cada paso tiene un ID por el cual se filtra al seleccionar el paso a visualizar -->
+            <!-- Contenido de los pasos de todas las clases -->
+            <!-- <div id="tabContent" class="tab-content flex-fill p-4 border-md-left"></div> -->
+            <div w3-include-html="" class="tab-content flex-fill p-4 border-md-left"></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Incluir FOOTER único, reparar -->
+  <!-- <iframe src="./footer.html"
+    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> -->
+
+  <!-- FOOTER -->
+  <footer
+    class="container-fluid footerHeight border-top bg-white d-flex flex-wrap align-items-center justify-content-between">
+    <div
+      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center m-0 py-2 py-md-0">
+      <ul class="list-group">
+        <li class="list-group-item text-center text-md-start border-0 py-1">
+          <p class="text-decoration-none m-0">Por consultas o fallas, 
+            <a class="text-decoration-none" href="https://www.ayp.org.ar/contacto-aulas/" target="_blank">
+              <span class="linkColorRed">contáctanos</span>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-center align-items-center m-0 py-2 py-md-0">
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item border-0">
+          <a href="https://www.facebook.com/arteyparte.ac/" target="_blank">
+            <!--<i class="fab fa-facebook fa-2x"></i>-->
+            <img style="width: 40px;" src="../img/facebook.png" alt="">
+          </a>
+        </li>
+        <li class="list-group-item border-0">
+          <a href="https://twitter.com/ArteyParte_ac" target="_blank">
+            <!--<i class="fab fa-twitter fa-2x"></i>-->
+            <img style="width: 40px;" src="../img/twitter.png" alt="">
+          </a>
+        </li>
+        <li class="list-group-item border-0">
+          <a href="https://www.instagram.com/arteyparte.ac/" target="_blank">
+            <!--<i class="fab fa-instagram fa-2x"></i>-->
+            <img style="width: 40px;" src="../img/instagram.png" alt="">
+          </a>
+        </li>
+        <li class="list-group-item border-0">
+          <a href="https://www.youtube.com/user/asociacionarteyparte" target="_blank">
+            <!--<i class="fab fa-youtube fa-2x"></i>-->
+            <img style="width: 40px;" src="../img/youtube.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center mt-2 m-0 py-2 py-md-0">
+      <a href="https://www.ayp.org.ar/aja/" target="_blank"
+        class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+        <figure class="m-0 px-2" style="width: 80px">
+          <img src="./img/LOGO_AJA-01.png" class="img-fluid" alt="...">
+        </figure>
+      </a>
+      <a href="https://www.ayp.org.ar/" target="_blank"
+        class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+        <figure class="m-0 px-2" style="width: 110px">
+          <img src="./img/gipemlogo2.png" class="img-fluid" alt="...">
+        </figure>
+        <figure class="m-0 px-2" style="width: 80px;">
+          <img src="./img/logoayp1.png" class="img-fluid" alt="...">
+        </figure>
+      </a>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <!-- BOOTSTRAP 5.0 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+  </script>
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+
+  <!-- SCRIPT para ocultar la presentacion -->
+  <script src="../js/ocultarPresentacion.js"></script>
+
+  <!-- SCRIPT selector de CLASE -->
+  <script src="../js/selectorClase.js"></script>
+
+  <!-- SCRIPT selector de ACTIVIDAD -->
+  <script src="../js/selectorActividad1.js"></script>
+
+  <!-- SCRIPT modificador del div de tab-content, con id="w3-include-html" -->
+  <script src="../js/includeHTML.js"></script>
+  
+  <!-- SCRIPT que dispara la función de modificar el div de tab-content al cambiar de clase -->
+  <script src="../js/modificadorTabContent.js"></script>
+</body>
+
+</html>

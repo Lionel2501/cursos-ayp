@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./img/favicon.ico"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/master.css">
+
+  <!-- VERIFICAR SI EL USUARIO ESTÁ LOGUEADO -->
+  <script src="../js/checkLoggedIn.js"></script>
+
+  <title>RECURSOS ADICIONALES</title>
+</head>
+
+<body class="container-fluid p-0">
+  <!-- Incluir HEADER CHICO, reparar -->
+  <!-- <iframe src="./headerChico.html"
+    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> -->
+
+  <!-- HEADER en versión compacta. Debería ser un archivo aparte e importarlo aquí -->
+  <header class="headerHeight bgClase d-flex align-items-center justify-content-between"
+  style="height: 56px;">
+    <div class="col-1 d-flex justify-content-center text-center mx-3">
+      <a href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+          class="bi bi-arrow-left-circle text-light" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+        </svg></a>
+    </div>
+    <div class="w-100 bgClase d-flex justify-content-end align-items-center">
+      <img style="width: 25px; margin-right: 10px;" class="m-0 p-0 headerHeightIndex img-fluid" src="./img/pezicono.png" alt="">
+      <h5 class="mx-2 text-white d-flex align-items-center oswald mt-2">Pescando Sonidos</h5>
+    </div>
+    <div class="col-1 d-flex">
+    </div>
+  </header>
+
+  <main class="mainHeight bgGrey">
+    <div class="d-flex flex-wrap justify-content-around mx-2">
+      <div class="col-12 col-md-10 py-3">
+        <div class="card">
+          <div class="d-flex justify-content-center align-items-center mt-3">
+            <div class="col-0 col-md-1 d-flex"></div>
+            <div class="col-12 col-md-10 py-3">
+              <div class="card-body">
+                <div class="py-2">
+                  <h2 class="text-left oswald" style="letter-spacing: 1px;">Recursos adicionales</h2>
+                </div>
+                <div class="mt-2">
+                  <p class="text-left w-75">Desde aquí podrás descargar archivos de audio y video en forma individual para
+                    llevarlos o cargarlos en una memoria usb o en un dispositivo.
+                  </p>
+                  <div class="card">
+
+                    <!-- BARRA DE NAVEGACIÓN ENTRE CLASES -->
+                    <div class="card-header">
+                      <ul class="nav nav-pills nav-fill card-header-pills">
+                        <li class="nav-item">
+                          <a class="nav-link active oswald h5" aria-current="true" href="#" id="clase1">Clase 1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link oswald h5" href="#" id="clase2">Clase 2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link oswald h5" href="#" id="clase3">Clase 3</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link oswald h5" href="#" id="clase4">Clase 4</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- LISTA DE DESCARGAS - CLASE 1 -->
+                    <div id="clase1List" class="d-flex flex-wrap card-body claseList">
+                      <div class="col-12 col-md-6 px-3 mb-5">
+                        <div class="d-flex justify-content-between" >
+                          <h4 class="text-center oswald">Audio</h4>
+                          <span class="float-right downloadAll">
+                            <a href="https://drive.google.com/u/0/uc?id=1ST0JM9EocVq_eCChDrs-alidGAyiAC3B&export=download" 
+                            style="color: rgb(73, 73, 73);">Descargar todos</a>
+                          </span>
+                        </div>
+                        <ul class="list-group">
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1did36H4eENA3zCSaJMJcq05IxIYOSpgR&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">01</div>
+                              <div class="py-2 linkTitle">La piñata</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1ImoGUOSb8-zRpsrAZHJlXuZF17An_Lb5&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">02</div>
+                              <div class="py-2 linkTitle">Jeremías <span class="fontLight">(relato)</span></div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1Lfj8IQEaLjm_2qtUNDYqnGxK7mV0Yn17&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">03</div>
+                              <div class="py-2 linkTitle">Jeremías <span class="fontLight">(truco 1)</span></div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1LX1ZZUBIeRJe_7weczBkV55kaemhRTb8&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">04</div>
+                              <div class="py-2 linkTitle">Jeremías <span class="fontLight">(truco 2)</span></div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1Q42Rx-jfKl6qsoPaiD4KIVNaXsegKR0K&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">05</div>
+                              <div class="py-2 linkTitle">Jeremías <span class="fontLight">(truco 3)</span> </div>
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6 px-3">
+                        <div class="d-flex justify-content-between" >
+                          <h4 class="text-center oswald">Video</h4>
+                          <span class="float-right downloadAll">
+                            <a href="https://drive.google.com/u/0/uc?id=1ARjDlGBPc3brq3dU9zkEgDMAlq_uBeGl&export=download" 
+                            style="color: rgb(73, 73, 73);">Descargar todos</a>
+                          </span>
+                        </div>
+                        <ul class="list-group">
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=12103fLEbdqh1auOX6l7A6P2wNHHVUEfD&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">01</div>
+                              <div class="py-2 linkTitle">La piñata</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1TY999K1MuOiAgkgsYFIBeynISKWhz_jf&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">02</div>
+                              <div class="py-2 linkTitle">Jeremías</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1wpjV55HB_r4jfCKJrL1wMgk2JCgDFtDI&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">03</div>
+                              <div class="py-2 linkTitle">La familia</div>
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- LISTA DE DESCARGAS - CLASE 2 -->
+                    <div id="clase2List" class="d-none flex-wrap card-body claseList">
+                      <div class="col-12 col-md-6 px-3 mb-5">
+                        <div class="d-flex justify-content-between" >
+                          <h4 class="text-center oswald">Audio</h4>
+                          <span class="float-right downloadAll">
+                            <a href="https://drive.google.com/u/0/uc?id=1SCQj_zI20KtZHL8c5vxi4W3o5-1T2FlR&export=download" 
+                            style="color: rgb(73, 73, 73);">Descargar todos</a>
+                          </span>
+                        </div>
+                        <ul class="list-group">
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1wMzPJsfOOGW1KBjHBqExIqc_xy7MuV26&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">01</div>
+                              <div class="py-2 linkTitle">¿Cómo será? - <span class="fontLight">altura</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=15MP1KBEBjutmdeBhRj4rZepR99K9ycz4&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">02</div>
+                              <div class="py-2 linkTitle">¿Cómo será? <span class="fontLight">(karaoke)</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1LM_3s_8pK3V8SPRHxhSdc3VZF5raYpyA&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">03</div>
+                              <div class="py-2 linkTitle">¿Cómo será? - <span class="fontLight">duración</span> </div>
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6 px-3 mb-5">
+                        <div class="d-flex justify-content-between" >
+                          <h4 class="text-center oswald">Video</h4>
+                          <span class="float-right downloadAll">
+                            <a href="https://drive.google.com/u/0/uc?id=1GgAo4wH0YGD2ZCKSLVzK301KUZ_k5eoX&export=download" 
+                            style="color: rgb(73, 73, 73);">Descargar todos</a>
+                          </span>
+                        </div>
+                        <ul class="list-group">
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1rHC63vRTpZ3xoJWW7HU6sbNq47rp4lBB&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">01</div>
+                              <div class="py-2 linkTitle">¿Cómo será?</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1Waxy4dWy7G3uWvXh-NISJuwk0N6rty_p&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">02</div>
+                              <div class="py-2 linkTitle">Toboganes</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1cbiZyEO6yQBcU6wstjLR7TgfzngcaAL8&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">03</div>
+                              <div class="py-2 linkTitle">Rogelio Dintel</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=15COU_ntepbhcMNLCDX7iXS1r4bbS9QNn&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex"
+                              style="padding: 0 1rem;">
+                              <div class="py-2 linkNum">04</div>
+                              <div class="py-2 linkTitle">¿Cómo será? II</div>
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- LISTA DE DESCARGAS - CLASE 3 -->
+                    <div id="clase3List" class="d-none flex-wrap card-body claseList">
+                      <div class="col-12 col-md-6 px-3 mb-5">
+                        <div class="d-flex justify-content-between" >
+                          <h4 class="text-center oswald">Audio</h4>
+                          <span class="float-right downloadAll">
+                            <a href="https://drive.google.com/u/0/uc?id=1dqQ23b0CSSD9Ul8sLI-Cg3pTIC6nJYbI&export=download" 
+                            style="color: rgb(73, 73, 73);">Descargar todos</a>
+                          </span>
+                        </div>
+                        <ul class="list-group">
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1nzhkolvT1cD-0Z8qYBz5fyEZSamlPj-i&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">01</div>
+                              <div class="py-2 linkTitle">Canción de la zanahoria</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1uTlpkAwTDsQqaN5IG0jmJAGFLQL-vV_0&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">02</div>
+                              <div class="py-2 linkTitle">Serapio Alcornoque</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1ouLh_2q91W6y-lBh3H66G5POyMGuMT1B&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">03</div>
+                              <div class="py-2 linkTitle">¿Quién será?</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=15Su6i6fDxsABgMSi-j1oyzmng7h8Zp5Q&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">04</div>
+                              <div class="py-2 linkTitle">¿Quién será? <span class="fontLight">(karaoke)</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=15vj4ygoaW8Pf98K6xAKbPDqFtzr_FlhP&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">05</div>
+                              <div class="py-2 linkTitle">¿Quién será? <span class="fontLight">-ambulancia-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=16-2yoffd-N5fWw3CWYhpIsDRiAKTjSWd&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">06</div>
+                              <div class="py-2 linkTitle">¿Quién será? <span class="fontLight">-banda-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=11w0vU0KWYYbLbx7vKvQT8SxU0K5W2NA1&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">07</div>
+                              <div class="py-2 linkTitle">¿Quién será? <span class="fontLight">-basquetball-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1flcS6FNgVpLsC92F_V9DF-HgCxS_3oqg&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">08</div>
+                              <div class="py-2 linkTitle">¿Quién será? <span class="fontLight">-coro-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1zpKXvlroyUqCrPITPIdChhyzO0WXiWXs&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">09</div>
+                              <div class="py-2 linkTitle">¿Quién será? <span class="fontLight">-moto-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1O8EQnglm3jQtoTvlvUgDGNMJimnnBjpn&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">10</div>
+                              <div class="py-2 linkTitle">¿Quién será? <span class="fontLight">-transporte escolar-</span> </div>
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6 px-3 mb-5">
+                        <div class="d-flex justify-content-between" >
+                          <h4 class="text-center oswald">Video</h4>
+                          <span class="float-right downloadAll">
+                            <a href="https://drive.google.com/u/0/uc?id=1utnaGNdZRjT6GImfT5zgI0cKOyCXlKKG&export=download" 
+                            style="color: rgb(73, 73, 73);">Descargar todos</a>
+                          </span>
+                        </div>
+                        <ul class="list-group">
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1s8zP6E4EI1_CoZZZc5n6risRi1AIBIKn&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">01</div>
+                              <div class="py-2 linkTitle">Canción de la zanahoria</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1H_AmKe4FK3y_gHlyL4t-RG47OJdwfYCJ&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">02</div>
+                              <div class="py-2 linkTitle">Serapio Alcornoque</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1tlpJkAmdNoFgHw6OXtPozYsSjboAyIL3&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">03</div>
+                              <div class="py-2 linkTitle">¿Quién será?</div>
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <!-- LISTA DE DESCARGAS - CLASE 4 -->
+                    <div id="clase4List" class="d-none flex-wrap card-body claseList">
+                      <div class="col-12 col-md-6 px-3 mb-5">
+                        <div class="d-flex justify-content-between" >
+                          <h4 class="text-center oswald">Audio</h4>
+                          <span class="float-right downloadAll">
+                            <a href="https://drive.google.com/u/0/uc?id=1Re1ukxgm4XVBMUGdxpJgerbO3VGWs90Q&export=download" 
+                            style="color: rgb(73, 73, 73);">Descargar todos</a>
+                          </span>
+                        </div>
+                        <ul class="list-group">
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=141vYYptrjYBOlHQJ7hzPzQyV6G9sbV02&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">01</div>
+                              <div class="py-2 linkTitle">Los enanos veracruzanos</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1Q6D52NHFYT4SHffGJww_-MEMKsbFrV8z&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">02</div>
+                              <div class="py-2 linkTitle">Los enanos veracruzanos <span class="fontLight">-pres1-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1iTv6UlxHq1vhJE8hujAhbTSVCE3yb30f&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">03</div>
+                              <div class="py-2 linkTitle">Los enanos veracruzanos <span class="fontLight">-pres2-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=12SlEj9Y9H7d1ZujJu8AgmRig8x9eXgH6&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">04</div>
+                              <div class="py-2 linkTitle">Los enanos veracruzanos <span class="fontLight">-pres3-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1fcR96YNLWQtHGAQCKsfk23cgjOsj39FI&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">05</div>
+                              <div class="py-2 linkTitle">Los enanos veracruzanos <span class="fontLight">-pres4-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1HebQwSx7WzjP9F_vbM7w2rRS-dSbkQWU&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">06</div>
+                              <div class="py-2 linkTitle">¿Por dónde fue el coche?</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1NO0UpfnCa6aKM_T_UF4VSBH_PROrmTY2&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">07</div>
+                              <div class="py-2 linkTitle">El ingeniero distraído <span class="fontLight">-1-</span> </div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1_Z435jfPOoSIWmVWY6pCH-vV4kwKoR2-&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">08</div>
+                              <div class="py-2 linkTitle">El ingeniero distraído <span class="fontLight">-2-</span></div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1pQe2cms27FPm6VR9MiPIDC2hJuBNWpbM&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink d-flex linkList">
+                              <div class="py-2 linkNum">09</div>
+                              <div class="py-2 linkTitle">El ingeniero distraído <span class="fontLight">-3-</span></div>
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6 px-3 mb-5">
+                        <div class="d-flex justify-content-between" >
+                          <h4 class="text-center oswald">Video</h4>
+                          <span class="float-right downloadAll">
+                            <a href="https://drive.google.com/u/0/uc?id=15sUbSt0I7XVSuJec44RFTZcWRb0xco9o&export=download" 
+                            style="color: rgb(73, 73, 73);">Descargar todos</a>
+                          </span>
+                        </div>
+                        <ul class="list-group">
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=17sRsuST3gumCxEyUemNviS9ndG0yZUmN&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink linkList d-flex">
+                              <div class="py-2 linkNum">01</div>
+                              <div class="py-2 linkTitle">Los enanos veracruzanos</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1omQOVlkZNc44ObhMgRQlUOtxLqbFzkV0&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink linkList d-flex">
+                              <div class="py-2 linkNum">02</div>
+                              <div class="py-2 linkTitle">Encantador de serpientes</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1aXghghgR4ZZbZCh-LbdQ66sC6myA0G7U&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink linkList d-flex">
+                              <div class="py-2 linkNum">03</div>
+                              <div class="py-2 linkTitle">¿Por dónde fue el coche?</div>
+                            </li>
+                          </a>
+                          <a class="text-decoration-none"
+                            href="https://drive.google.com/u/0/uc?id=1XBvc4ETf2TckiYUjCLyO4Ma6pdMLxjTl&export=download">
+                            <li class="list-group-item cardShadow text-center rojoLink linkList d-flex">
+                              <div class="py-2 linkNum">04</div>
+                              <div class="py-2 linkTitle">El ingeniero distraído</div>
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-0 col-md-1 d-flex"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Incluir FOOTER único, reparar -->
+  <!-- <iframe src="./footer.html"
+    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> -->
+
+  <!-- FOOTER -->
+  <footer
+    class="container-fluid footerHeight border-top bg-white d-flex flex-wrap align-items-center justify-content-between">
+    <div
+      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center m-0 py-2 py-md-0">
+      <ul class="list-group">
+        <li class="list-group-item text-center text-md-start border-0 py-1">
+          <p class="text-decoration-none m-0">Por consultas o fallas, 
+            <a class="text-decoration-none" href="https://www.ayp.org.ar/contacto-aulas/" target="_blank">
+              <span class="linkColorRed">contáctanos</span>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-center align-items-center m-0 py-2 py-md-0">
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item border-0">
+          <a href="https://www.facebook.com/arteyparte.ac/" target="_blank">
+            <!--<i class="fab fa-facebook fa-2x"></i>-->
+            <img style="width: 40px;" src="../img/facebook.png" alt="">
+          </a>
+        </li>
+        <li class="list-group-item border-0">
+          <a href="https://twitter.com/ArteyParte_ac" target="_blank">
+            <!--<i class="fab fa-twitter fa-2x"></i>-->
+            <img style="width: 40px;" src="../img/twitter.png" alt="">
+          </a>
+        </li>
+        <li class="list-group-item border-0">
+          <a href="https://www.instagram.com/arteyparte.ac/" target="_blank">
+            <!--<i class="fab fa-instagram fa-2x"></i>-->
+            <img style="width: 40px;" src="../img/instagram.png" alt="">
+          </a>
+        </li>
+        <li class="list-group-item border-0">
+          <a href="https://www.youtube.com/user/asociacionarteyparte" target="_blank">
+            <!--<i class="fab fa-youtube fa-2x"></i>-->
+            <img style="width: 40px;" src="../img/youtube.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center mt-2 m-0 py-2 py-md-0">
+      <a href="https://www.ayp.org.ar/aja/" target="_blank"
+        class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+        <figure class="m-0 px-2" style="width: 80px">
+          <img src="./img/LOGO_AJA-01.png" class="img-fluid" alt="...">
+        </figure>
+      </a>
+      <a href="https://www.ayp.org.ar/" target="_blank"
+        class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+        <figure class="m-0 px-2" style="width: 110px">
+          <img src="./img/gipemlogo2.png" class="img-fluid" alt="...">
+        </figure>
+        <figure class="m-0 px-2" style="width: 80px;">
+          <img src="./img/logoayp1.png" class="img-fluid" alt="...">
+        </figure>
+      </a>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <!-- BOOTSTRAP 5.0 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+  </script>
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+
+  <!-- SCRIPT selector de CLASE -->
+  <script src="../js/selectorClase.js"></script>
+
+</body>
+
+</html>
